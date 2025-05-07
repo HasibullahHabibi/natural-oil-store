@@ -1,0 +1,171 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+body {
+  font-family: Vazir, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  direction: rtl;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* ناوبری */
+header {
+  background-color: #006e51;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffdf5f;
+}
+
+/* هیرو */
+.hero {
+  background: url("images/hero-banner.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* لیست محصولات */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  gap: 30px;
+  padding: 0 15px;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* دکمه‌ها */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #006e51;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #004b36;
+}
+
+/* جزئیات محصول */
+.product-details {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.product-info img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.product-info h1 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.product-info p {
+  margin-bottom: 10px;
+}
+
+/* فرم تماس */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-family: inherit;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* صفحات دیگر */
+.about, .contact, .cart {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* فوتر */
+footer {
+  background-color: #006e51;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
